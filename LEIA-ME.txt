@@ -1,0 +1,8 @@
+FarmaControl (PHP) - como instalar no XAMPP
+1. Copie esta pasta inteira para C:\xampp\htdocs\farmacontrol
+2. Abra o XAMPP e inicie Apache e MySQL.
+3. No phpMyAdmin, importe o farmacontrol.sql (se o banco ainda nao existir).
+4. Se seu MySQL tem senha, edite config.php (DB_USER / DB_PASS).
+5. Abra no navegador: http://localhost/farmacontrol/setup.php  (cria o usuario admin)
+6. APAGUE o arquivo setup.php.
+7. Acesse http://localhost/farmacontrol/  -> login: admin / senha: admin123

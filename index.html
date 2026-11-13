@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FarmaControl</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="login" class="login">
+  <form id="loginForm" class="login-card">
+    <div class="logo big"><span class="cross">✚</span><b>FarmaControl</b></div>
+    <label>Usuário<input id="lg" required autofocus></label>
+    <label>Senha<input id="ls" type="password" required></label>
+    <button class="btn primary">Entrar</button>
+  </form>
+</div>
+
+<div id="app" class="app hidden">
+  <aside class="side">
+    <div class="logo"><span class="cross">✚</span><b>FarmaControl</b></div>
+    <nav id="nav">
+      <a data-p="inicio">🏠 Início</a>
+      <a data-p="produtos">💊 Produtos</a>
+      <a data-p="estoque">📦 Estoque</a>
+      <a data-p="vendas">🛒 Vendas</a>
+      <a data-p="compras">🧾 Compras</a>
+      <a data-p="fornecedores">🚚 Fornecedores</a>
+      <a data-p="clientes">👥 Clientes</a>
+      <a data-p="funcionarios">🧑‍💼 Funcionários</a>
+      <a data-p="caixa">💰 Caixa</a>
+      <a data-p="impostos">🏷️ Impostos</a>
+      <a data-p="relatorios">📊 Relatórios</a>
+    </nav>
+    <a id="sair" class="sair">⎋ Sair</a>
+  </aside>
+  <main class="main">
+    <div class="topbar">👤 <span id="uname"></span></div>
+    <div id="view"></div>
+  </main>
+</div>
+<div id="modal" class="modal hidden"><div id="modalBox" class="modal-box"></div></div>
+<div id="toast" class="toast hidden"></div>
+<script src="app.js"></script>
+</body>
+</html>
